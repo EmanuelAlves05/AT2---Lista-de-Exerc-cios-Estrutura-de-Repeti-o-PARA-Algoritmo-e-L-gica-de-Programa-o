@@ -1,0 +1,36 @@
+real salario, media_salario, soma_salario=0, soma_filhos=0, media_filhos, maior_salario, percentual
+    inteiro filhos=0, pessoas=0
+
+    para(inteiro i=1; i<=5; i++ ){
+      escreva("Qual o seu salario?\n")
+      leia(salario)
+
+      escreva("Qual a quantidade de filhos que vc tem?\n")
+      leia(filhos)
+
+      soma_salario=soma_salario+salario
+
+      soma_filhos=soma_filhos+filhos
+
+      se(i==1){
+        maior_salario=salario
+      }
+
+      se(salario>maior_salario){
+        maior_salario = salario
+      }
+      se(salario<=100){
+        pessoas++
+
+      }
+    }
+    media_salario=soma_salario/5
+    media_filhos=soma_filhos/5
+    percentual=(pessoas*100)/5
+
+    escreva("a media do salário da população é ", media_salario, "\n")
+    escreva("A média do número de filhos é ", media_filhos, "\n")
+    escreva("O maior salário é de ", maior_salario, "\n")
+    escreva("O percentual de pessoas que recebem até 100 reais é ", percentual, "%")
+}
+}
