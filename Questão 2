@@ -1,0 +1,26 @@
+caracter sexo, olhos, cabelo
+    inteiro idade, maior_idade=0, especifica=0
+
+    para(inteiro i=1; i<=500; i++){
+      escreva("Qual o seu sexo?\n")
+      leia(sexo)
+
+      escreva("Qual a cor dos olhos? digite V para verde, A para azul e C para castanhos\n")
+      leia(olhos)
+
+      escreva("Qual a cor do cabelo? Digite L para loiros, C para castanhos e P para pretos\n")
+      leia(cabelo)
+
+      escreva("Qual a idade?\n")
+      leia(idade)
+
+      se(idade>maior_idade){
+        maior_idade = idade
+      
+    } se(sexo=="F" e olhos=="V" e cabelo=="L" e idade >=18 e idade<=35){
+        especifica++
+    }}
+      escreva("A pessoa de maior idade tem ", maior_idade, "\n")
+      escreva(especifica, " pessoas tem essas especificações")
+}
+}
