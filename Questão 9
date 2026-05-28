@@ -1,0 +1,9 @@
+para(inteiro i=1; i<=10; i++){
+      escreva("A tabuada do ", i, " é:\n")
+
+    para(inteiro t=0; t<=10; t++){
+    escreva(i, "x", t, "=", i*t, "\n")
+}
+}    
+}
+}
