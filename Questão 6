@@ -1,0 +1,24 @@
+inteiro num, maior, menor
+
+    para(inteiro i=1; i<=50; i++){
+      escreva("Digite o número\n")
+      leia(num)
+
+    se(i==1){
+      maior=num
+}
+    se(i==1){
+      menor=num
+}
+    se(num>maior){
+      maior=num
+}
+    senao se(num<menor){
+      menor=num
+}
+}
+    escreva("O maior número é ", maior, "\n")
+    escreva("O menor número é ", menor)
+
+}
+}
