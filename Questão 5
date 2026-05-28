@@ -1,0 +1,62 @@
+inteiro votos, candidato1=0, candidato2=0, candidato3=0, candidato4=0, nulos=0, branco=0
+
+    para(inteiro i=1; i<=10; i++){
+      escreva("1) candidato 1\n")
+      escreva("2) candidato 2\n")
+      escreva("3) candidato 3\n")
+      escreva("4) candidato 4\n")
+      escreva("5) nulo\n")
+      escreva("6) voto em branco\n")
+      escreva("0) Encerrar votação\n")
+      
+      leia(votos)
+
+    escolha(votos){
+      caso 1:
+        escreva("Voto realizado com sucesso\n")
+        candidato1++
+        pare
+      
+      caso 2:
+        escreva("Voto realizado com sucesso\n")
+        candidato2++
+        pare
+
+      caso 3:
+        escreva("Voto realizado com sucesso\n")
+        candidato3++
+        pare
+
+      caso 4:
+        escreva("Voto realizado com sucesso\n")
+        candidato4++
+        pare
+
+      caso 5:
+        escreva("Voto realizado com sucesso\n")
+        nulos++
+        pare
+
+      caso 6:
+        escreva("Voto realizado com sucesso\n")
+        branco++
+        pare
+      caso 0:
+        escreva("Votação encerrada")
+        pare
+
+      caso contrario:
+        escreva("Voto inválido\n")
+}
+      se(votos==0){
+        pare
+}   
+}
+      escreva("A quantidade de votos do Candidato 1 foi ", candidato1, "\n")
+      escreva("A quantidade de votos do Candidato 2 foi ", candidato2, "\n")
+      escreva("A quantidade de votos do Candidato 3 foi ", candidato3, "\n")
+      escreva("A quantidade de votos do Candidato 4 foi ", candidato4, "\n")
+      escreva("A quantidade de votos nulo foi ", nulos, "\n")
+      escreva("A quantidade de votos em branco foi ", branco)
+}     
+}
